@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Controls</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #0f1010;
+      color: #ffd700;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    .controls {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      width: 250px;
+      background: rgba(0, 0, 0, 0.8);
+      border-radius: 10px;
+      border: 2px solid gold;
+      box-shadow: 0 0 25px gold;
+      padding: 20px;
+    }
+
+    .controls h2 {
+      text-align: left;
+      color: #ffd700;
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .control-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 6px 0;
+      font-size: 15px;
+      color: #fff;
+    }
+
+    .key {
+      background: gold;
+      color: black;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      padding: 4px 12px;
+      box-shadow: 0 0 10px gold;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .key:hover {
+      background: #ffcc00;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      opacity: 0.6;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="controls">
+    <h2>Car Controls</h2>
+    <div class="control-item"><span>Drive</span><button class="key">WASD</button></div>
+    <div class="control-item"><span>Brake</span><button class="key">Space</button></div>
+    <div class="control-item"><span>Boost</span><button class="key">Shift</button></div>
+    <div class="control-item"><span>Boom</span><button class="key">C</button></div>
+    <div class="control-item"><span>Noclip</span><button class="key">F</button></div>
+    <div class="control-item"><span>Fly Up</span><button class="key">Space</button></div>
+    <div class="control-item"><span>Fly Down</span><button class="key">Ctrl</button></div>
+    <div class="control-item"><span>Camera</span><button class="key">G</button></div>
+    <div class="control-item"><span>Repair</span><button class="key">R</button></div>
+    <div class="control-item"><span>Exit</span><button class="key">X</button></div>
+    <footer>F6 to toggle</footer>
+  </div>
+</body>
+</html>
